@@ -14,3 +14,6 @@ console.log(arrOther)
 
 var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 // 用来测试数组的每个元素的函数。返回 true 表示该元素通过测试，保留该元素，false 则不保留。它接受以下三个参数：
+
+
+// 过滤么，其实顾名思义大致就知道这个函数是在干么了
