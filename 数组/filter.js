@@ -2,7 +2,8 @@ const arr = [2,4,6,9]
 const arrOther = arr.filter( (item,index) => {
     return item * 2 === 4
 } )
-console.log(arrOther)
+console.log(arrOther)  //[ 2 ]
+console.log(arr) //[ 2, 4, 6, 9 ]
 
 
 // 返回的是是一个数组
@@ -12,7 +13,7 @@ console.log(arrOther)
 // 返回的是一个布尔值，如果是true就push到数组
 // 中
 
-var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+// var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 // 用来测试数组的每个元素的函数。返回 true 表示该元素通过测试，保留该元素，false 则不保留。它接受以下三个参数：
 
 
