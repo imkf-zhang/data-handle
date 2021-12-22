@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [1,2,2]
+      function deleteRepetition1(arr) {
+        if (arr.length == 0 || arr.length == 1) {
+          return arr;
+        }
+        let newArr = [arr[0]];
+        for (let index = 1; index < arr.length; index++) {
+          for (let i = 0; i < newArr.length; i++) {
+            if (arr[index] === newArr[i]) {
+              break;
+            }
+            debugger
+            newArr.push(arr[index]);
+          }
+        }
+        return newArr;
+      }
+      // 2 ： 1   [1,2]
+
+      console.log(deleteRepetition1(arr));
+    </script>
+  </body>
+</html>
