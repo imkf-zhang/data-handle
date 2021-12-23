@@ -1,3 +1,8 @@
+var obj = {};
+console.log(obj.a); // undefined
+// 让数组中的每一个值成为一个对象的一个属性就可以了
+
+
 function delectRepeat(arr) {
   var obj = {};
   var res = [];
@@ -13,5 +18,4 @@ const res = [1,2,3,4,6,8,3,1]
 
 console.log(delectRepeat(res))
 
-var obj = {};
-console.log(obj.a); // undefined
+
