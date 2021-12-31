@@ -10,7 +10,8 @@ const resolveComponent = arr.some((item,index) => {
     console.log(index)
     return item > 2
 })
-
+//0
+//1
 console.log(resolveComponent) // true   找到后立马就跳出循环了
 
 
@@ -19,4 +20,5 @@ const res = arr.every((item,index) => {
     console.log(index)
     return item > 2
 })
-console.log(res)  // fale   找到后立马就跳出循环了
+// 0
+console.log(res)  // false   找到后立马就跳出循环了
