@@ -11,6 +11,8 @@ if (data && data.test) {
 const value = data?.test?.value;
 console.log(value); // 在浏览器环境下其实是可以的,node环境下确执行不了
 
+console.log(data?.test.age) // undefined
+
 // ********* 可选链操作符为安全访问对象的某个属性值提供了便利，如果你不判断直接去用某个对象的某个属性很容易会引起错误
 
 // 再举一个例子
