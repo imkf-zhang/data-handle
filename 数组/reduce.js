@@ -26,7 +26,8 @@ console.log(sum1)
 
 // arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
 
-// 回调函数第一次执行时，accumulator 和currentValue的取值有两种情况：如果调用reduce()时提供了initialValue，
+// 回调函数第一次执行时，accumulator 和currentValue的取值有两种情况：
+// 如果调用reduce()时提供了initialValue，
 // accumulator取值为initialValue，currentValue取数组中的第一个值；如果没有
 
 // 注意：如果没有提供initialValue，reduce 会从索引1的地方开始执行 callback 方法，
