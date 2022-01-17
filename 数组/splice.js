@@ -35,20 +35,25 @@ console.log(fruit); //[ 1, 99, 2, 4, 6 ] 直接在所设定的位置插入
 console.log(arr); //[]
 
 // 删除demo:
-let color = ['red','blue','yellow']
-let arr1 = color.splice(1,1)
-console.log(color) //[ 'red', 'yellow' ]
-console.log(arr1) //[ 'blue' ]
+let color = ["red", "blue", "yellow"];
+let arr1 = color.splice(1, 1);
+console.log(color); //[ 'red', 'yellow' ]
+console.log(arr1); //[ 'blue' ]
 
 // 替换demo: 其实就是删除和插入的连环操作
-let num = [1,2,3,4]
-let arr2 = num.splice(1,1,999)
-console.log(num) //[ 1, 999, 3, 4 ]
-console.log(arr2) // [ 2 ]
-
+let num = [1, 2, 3, 4];
+let arr2 = num.splice(1, 1, 999);
+console.log(num); //[ 1, 999, 3, 4 ]
+console.log(arr2); // [ 2 ]
 
 // 重点：
 // 如果 deleteCount 被省略了，或者它的值大于等于array.length - start(也就是说，
 //   如果它大于或者等于start之后的所有元素的数量)，那么start之后数组的所有元素都会被删除。
 // 如果 deleteCount 是 0 或者负数，则不移除元素。这种情况下，至少应添加一个新元素。
 // splice会改变原数组
+
+let num111 = [1, 5, 6, 4, 2];
+let num222 = num111.splice();
+console.log('num111',num111)
+console.log('num222',num222)
+
