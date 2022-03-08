@@ -32,3 +32,17 @@ console.log(sum1)
 
 // 注意：如果没有提供initialValue，reduce 会从索引1的地方开始执行 callback 方法，
 //跳过第一个索引。如果提供initialValue，从索引0开始。
+
+
+
+//数组里所有值的和
+var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+// 和为 6
+//你也可以写成箭头函数的形式：
+
+var total = [ 0, 1, 2, 3 ].reduce(
+  ( acc, cur ) => acc + cur,
+  0
+);
