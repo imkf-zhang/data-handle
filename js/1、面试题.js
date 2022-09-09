@@ -1,13 +1,14 @@
-var a = { n: 1};  // 干了什么，开辟了一个空间生成了一个对象， a是生成对象的索引
+var a = { n: 1, x:9};  // 干了什么，开辟了一个空间生成了一个对象， a是生成对象的索引
 // 这个a可以叫为prevA的索引{n:1}
 
 console.log(a)  //{ n: 1 }
-
+let b ={ };
 // a.x是一个表达式计算，获取a.x的计算结果，缓存，等待后面的计算
-a.x = a = { n: 2 } // 这个a可以叫做nextA的索引，存的值是{n： 2}
+b.x = a = { n: 2 } // 这个a可以叫做nextA的索引，存的值是{n： 2}
 
 console.log(a.x)  // undefined   a.x 去获取{n: 2}上的不存在属性可不就是等于undefined
 console.log(a) // { n: 2 }
+console.log(b)
 
 // 试一试这种：
 // a.x = a = { n: 2, x:5 }  这样打印的话的结果就是5
